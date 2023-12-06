@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long int
+#define boost() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+class Node{
+        public:
+        int value;
+        Node* next;
+
+        Node(int value){
+            this->value=value;
+            this->next=NULL;
+        }
+    };
+int main(){
+    boost();
+    Node a(20);
+    Node b(30);
+    
+    a.next=&b;
+    cout<<a.value<<" "<<a.next->value<<endl;
+    return 0;
+}
